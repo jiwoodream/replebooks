@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Initializing the TabLayout
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
-        tabLayout.addTab(tabLayout.newTab().setText("Tab One"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab Two"));
+        tabLayout.addTab(tabLayout.newTab().setText("나의 독서노트"));
+        tabLayout.addTab(tabLayout.newTab().setText("라이브 독서노트"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         // Initializing ViewPager
@@ -60,11 +60,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-        FragmentManager fm = getFragmentManager();
-        FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.add(R.id.fragmentBorC, new FragmentB());
-        fragmentTransaction.commit();
 
     }
 
