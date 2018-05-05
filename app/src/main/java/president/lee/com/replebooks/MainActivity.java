@@ -6,10 +6,16 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-
 import com.pm10.library.CircleIndicator;
 import com.pm10.library.LineIndicator;
+import java.util.ArrayList;
+import android.databinding.DataBindingUtil;
+
+import android.support.v7.widget.LinearLayoutManager;
+
+
 
 public class MainActivity extends AppCompatActivity {
     ViewPager vp;
@@ -76,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
         CircleIndicator circleIndicator = (CircleIndicator) findViewById(R.id.circle_indicator);
         circleIndicator.setupWithViewPager(viewPager);
     }
+
 
 
 
